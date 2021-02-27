@@ -1,0 +1,82 @@
+* {
+    padding:0px;
+    margin:0px;
+    font-size: 18px;
+    font-family:Geneva, Tahoma, sans-serif
+}
+a {
+    color:black;
+}
+ul {
+    list-style: none;
+}
+.datos {
+    background: black;
+    padding: 7.5px;
+    width: 100%;
+    color:white;
+    display: flex;
+    justify-content: center;
+}
+.datos span{
+    margin-right: 10%;
+}
+.datos .contenedor {
+    width: 1200px;
+}
+header {
+    background-color: #eae7e0;
+    color:black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+header .header {
+    width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header .header .logo{
+    width: 15%;
+}
+header .header .logo img{
+    width: 90%;
+    padding: 2.5%;
+}
+header .header .nav {
+    width: 80%;
+}
+header .header .nav nav ul{
+    list-style: none;
+    display: flex;
+    justify-content:flex-end;
+}
+header .header .nav nav ul a{
+    text-decoration: none;
+    color:black;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+header .header .nav nav ul a:hover, a:focus {
+    background-size: 100% 2px;
+}
+
+header .header .nav nav ul a li{
+    list-style: none;
+    padding: 15px;
+}
+
+.limitar {
+    justify-content: space-around;
+    display: flex;
+}
+.limitarhijo {
+    width: 1200px;
+    justify-content: space-around;
+    display: flex;
+}

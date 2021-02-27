@@ -1,0 +1,20 @@
+footer {
+    background: #eae7e0;
+    padding: 5%;
+    padding-bottom: 0%;
+}
+footer .copy {
+    padding: 5%;
+    justify-content: center;
+    display: flex;
+}
+footer nav{
+    width: 30%;}
+footer nav ul li{
+    padding: 2%;
+}
+footer .logo {
+    justify-content: center;
+    display: flex;
+    width: 30%;
+}
