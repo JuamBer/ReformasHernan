@@ -1,0 +1,40 @@
+.main .servicios {
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.main .servicios div.box {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    margin-bottom: 2.5%;    
+    justify-content: space-around;
+}
+.main .servicios div.box h1{
+    font-size: 20px;
+    min-height: 7.5vh;
+}
+.main .servicios div.box a{
+    padding-top: 5%;
+    padding-bottom: 15%;
+    font-size: 22.5px;
+}
+.main .servicios div.box a:hover{
+    color:brown
+}
+.main .servicios div.box img {
+    width: 50%;
+    background: #eae7e0;
+    object-fit: cover;
+    height: 40vh;
+}
+.main .servicios p{
+    padding-top: 1%;
+    min-height: 10vh;
+    padding-bottom: 2%;
+    
+}
+.texto {
+    width: 45%;
+}

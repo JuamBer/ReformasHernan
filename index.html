@@ -26,7 +26,7 @@
             <div class="nav">
                 <nav>
                     <ul>
-                        <a href="index.html"><li>Inicio</li></a>
+                        <a href="index.html" class="Activo"><li>Inicio</li></a>
                         <a href="pages/proyectos.html"><li>Proyectos</li></a>
                         <a href="pages/servicios.html"><li>Servicios</li></a>
                         <a href="pages/sobrenosotros.html"><li>Sobre Nosotros</li></a>
@@ -34,16 +34,45 @@
                     </ul>
                 </nav>
             </div>
+            
+            <div class="hamburger">
+                <div class="_layer -top"></div>
+                <div class="_layer -mid"></div>
+                <div class="_layer -bottom"></div>
+            </div>
+            <nav class="menuppal">
+                <ul>
+                  <li><a href="index.html" class="Activo">Inicio</a></li>
+                  <li><a href="pages/proyectos.html">Proyectos</a></li>
+                  <li><a href="pages/servicios.html">Servicios</a></li>
+                  <li><a href="pages/sobrenosotros.html">Sobre Nosotros</a></li>
+                  <li><a href="pages/contacto.html">Contacto</a></li>
+                </ul>
+              </nav>
         </div>
     </header>
+    <script>
+        // selector
+        var menu = document.querySelector('.hamburger');
+
+        // method
+        function toggleMenu (event) {
+        this.classList.toggle('is-active');
+        document.querySelector( ".menuppal" ).classList.toggle("is_active");
+        event.preventDefault();
+        }
+
+        // event
+        menu.addEventListener('click', toggleMenu, false);
+    </script>
     <div class="main">
         <div class="slider">
             <img src="img/slider/1.png" alt="">
         </div>
         <div class="servicios">
             <h1>Nuestros Servicios</h1>
-                <div class="limitar">
-                <div class="limitarhijo">
+                <div class="limitar"><div class="limitarhijo">
+                <div class="comt">
                     <div class="box">
                         <img src="img/servicios/1.png" alt="">
                         <h1>Construcción de Viviendas</h1>
@@ -59,9 +88,6 @@
                         <h1>Rehabilitación y Restauraciones de Todo Tipo</h1>
                         <a href="servicios/rehabilitacion_restauracion.html">Saber más</a>
                     </div>
-                </div></div>
-                <div class="limitar">
-                    <div class="limitarhijo">
                     <div class="box">
                         <img src="img/servicios/1.png" alt="">
                         <h1>Construcción de Naves Industiales</h1>
@@ -77,48 +103,49 @@
                         <h1>Pintura Interior y Exterior</h1>
                         <a href="servicios/construccion_naves.html">Saber más</a>
                     </div>
-                </div></div>
-        </div>
-        <div class="limitar">
-        <div class="limitarhijo">
-            <div class="info">
-                <div class="contenedor">
-                    <div>
-                        <img src="img/icons/calendario.svg" alt="">
-                        <h2>CUMPLIMIENTO DE PLAZOS</h2>
-                        <p>Planificamos todos nuestros proyectos, lo que nos permite comprometernos en los plazos de ejecución.</p>
-                        
-                    </div>
-                    <div>
-                        <img src="img/icons/llave.svg" alt="">
-                        <h2>PRECIO CERRADO</h2>
-                        <p>Sin sorpresas ni sobrecostes posteriores de última hora.</p>
-                    </div>
-                    <div>
-                        <img src="img/icons/llamada-telefonica.svg" alt="">
-                        <h2>ATENCIÓN PERSONALIZADA</h2>
-                        <p>Un profesional será el responsable y coordinador de la obra.</p>
-                    </div>
                 </div>
-                <div class="contenedor">
-                    <div>
-                        <img src="img/icons/limpieza.svg" alt="">
-                        <h2>LIMPIEZA</h2>
-                        <p>Todos nuestros profesionales son conscientes de ella y mantienen las obras en perfectas condiciones.</p>
-                    </div>
-                    <div>
-                        <img src="img/icons/file.svg" alt="">
-                        <h2>OBTENCIÓN DE LICENCIAS</h2>
-                        <p>Te asesoramos para la obtención y tramitación de las licencias de obra.</p>
-                    </div>
-                    <div>
-                        <img src="img/icons/puesta-en-marcha.svg" alt="">
-                        <h2>INNOVACIÓN</h2>
-                        <p>Estamos a la vanguardia en la utilización de materiales y nuevas tecnologías.</p>
-                    </div>
-                </div>
+            </div></div>
+
+            <div class="mas">
+                <a href="pages/servicios.html">Ver todos nuestros servicios</a>
             </div>
         </div>
+        
+        <div class="info">
+            <div class="contenedor">
+                <div>
+                    <img src="img/icons/calendario.svg" alt="">
+                    <h2>CUMPLIMIENTO DE PLAZOS</h2>
+                    <p>Planificamos todos nuestros proyectos, lo que nos permite comprometernos en los plazos de ejecución.</p>   
+                </div>
+                <div>
+                    <img src="img/icons/llave.svg" alt="">
+                    <h2>PRECIO CERRADO</h2>
+                    <p>Sin sorpresas ni sobrecostes posteriores de última hora.</p>
+                </div>
+                <div>
+                    <img src="img/icons/llamada-telefonica.svg" alt="">
+                    <h2>ATENCIÓN PERSONALIZADA</h2>
+                    <p>Un profesional será el responsable y coordinador de la obra.</p>
+                </div>
+            </div>
+            <div class="contenedor">
+                <div>
+                    <img src="img/icons/limpieza.svg" alt="">
+                    <h2>LIMPIEZA</h2>
+                    <p>Todos nuestros profesionales son conscientes de ella y mantienen las obras en perfectas condiciones.</p>
+                </div>
+                <div>
+                    <img src="img/icons/file.svg" alt="">
+                    <h2>OBTENCIÓN DE LICENCIAS</h2>
+                    <p>Te asesoramos para la obtención y tramitación de las licencias de obra.</p>
+                </div>
+                <div>
+                    <img src="img/icons/puesta-en-marcha.svg" alt="">
+                    <h2>INNOVACIÓN</h2>
+                    <p>Estamos a la vanguardia en la utilización de materiales y nuevas tecnologías.</p>
+                </div>
+            </div>
         </div>
     </div>
     <footer>

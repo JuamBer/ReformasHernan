@@ -1,106 +1,50 @@
 /* COLORES: #024027 #2D8C5F*/
 
+.main {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
 .Contacto {
     width: 50%;
     text-align: center;
     color:black;
-    margin-top: 1%;
     float: left;
 }
 .Contacto input,textarea{
+    border:none;
     width: 80%;
     max-width: 80%;
     padding: 15px;
     margin-bottom: 20px;
-    border-radius: 10px;
     color:black;
     transition: 0.2s;
     text-align: left;
-    border: 3px solid #2D8C5F;
+    background: #eae7e0;
     outline: none;
 }
 .Contacto button {
-    background: white;
+    border:none;
+    background: #eae7e0;
     width: 85%;
-    color: #024027;
-    border: 3px #2D8C5F solid;
-    border-radius: 10px;
+    color: black;
     transition: 0.2s;
     font-size: 20px;
-    padding: 5px;
+    padding: 2.5%;
     text-align: center;
 }
 .Contacto button:hover {
     color:white;
-    background:#024027;
-    border: 3px #024027 solid;
+    background:black;
     cursor:pointer;
 }
-
-
-.Redes {
+.Ubicación {
     width: 50%;
-    float: left;
-    margin-bottom: 5%;
 }
-.Redes ul {
-    display: flex;
-    display: -moz-box;
-    justify-content: space-around;
-    margin-left: -8px;
+.Ubicación iframe{
+    width: 100%;
+    min-height: 60vh;
 }
-.Redes ul li{
-    margin-top: 15px;
-    display: inline-block;
-    width: 20%;
-    text-align: center;
-}
-.Redes ul li a{
-	color: black;
-	font-size: 18px;
-	display: block;
-	text-decoration: none;
-	transition: 0.1s;
-	padding: 5%;
-}
-.Redes ul li a img {
-    margin-top: 5px;
-    width: 30px;
-    color: white;
-}
-.Redes ul li a#Twitter:hover{
-    background: rgba(0, 172, 238, 0.8);
-    border-radius: 5px;
-}
-.Redes ul li a#Instagram:hover{
-    background: rgba(193, 53, 132, 0.8);
-    border-radius: 5px;
-}
-.Redes ul li a#LinkedIn:hover{
-    background: rgba(14, 118, 168, 0.8);
-    border-radius: 5px;
-}
-.Redes ul li a#Youtube:hover{
-    background: rgba(196, 48, 43, 0.8);
-    border-radius: 5px;
-}
-.Redes ul li a#Stack:hover{
-    background: rgba(244, 128, 36, 0.8);
-    border-radius: 5px;
-}
-.Redes ul li a#Platzi:hover{
-	background: rgba(152, 202, 63, 0.8);
-	border-radius: 5px;
-}
-.Redes ul li a#GitHub:hover{
-    background: rgba(36, 41, 46, 0.8);
-    border-radius: 5px;
-}
-.Redes ul li a#Codepen:hover{
-    background:rgba(19, 20, 23, 0.8);
-    border-radius: 5px;
-}
-
 
 @media only screen and (max-width: 1000px) {
   .Contacto {
