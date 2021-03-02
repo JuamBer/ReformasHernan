@@ -76,17 +76,12 @@
     padding-bottom: 2.5%;
     padding-top: 5%;
 }
-.main .servicios p{
-    padding-top: 1%;
-    min-height: 10vh;
-    padding-bottom: 2%;
-    
-}
-.mas {
+
+.main .servicios .mas {
     text-align: center;
     padding-top: 5%;
 }
-.mas a{
+.main .servicios .mas a{
     display: inline-block;
     width: 33%;
     padding: 1.25%;
@@ -94,7 +89,7 @@
     text-decoration: none;
     transition: 0.2s;
 }
-.mas a:hover {
+.main .servicios .mas a:hover {
     color:white;
     background:black;
     cursor:pointer;
@@ -108,12 +103,40 @@
     .main .info .contenedor {
         justify-content:center;
         align-items: center;
-
         display:inline-block;
+    }
+    .main .info .contenedor div {
+        margin-bottom: 10%;
+    }
+    .main .info .contenedor div img{
+        width: 20%;
     }
     .main .servicios div.box {
         width: 95%;
         padding: 2.5%;
         align-items: center;
+        margin-bottom: 5%;
+    }
+    .main .servicios > h1{
+        text-align: center;
+        font-size: 30px;
+        padding: 2.5%;
+    }
+    .main .servicios div.box img {
+        width: 60%;
+    }
+    .main .servicios div.box a{
+        padding-top: 0%;
+        padding-bottom: 15%;
+        font-size: 22.5px;
+    }
+    .main .servicios div.box h1{
+        font-size: 20px;
+        min-height: auto;
+        padding-bottom: 2.5%;
+    }
+    .main .servicios .mas a{
+        width: 50%;
+        padding: 3%;
     }
   }
