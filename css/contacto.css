@@ -49,11 +49,7 @@
 @media only screen and (max-width: 1000px) {
   .Contacto {
       width: 100%;
-  }
-  .Redes {
-      margin-top: 5%;
-      width: 100%;
-      margin-bottom: 10%;
+      margin-bottom: 5%;
   }
   .Ubicación{
       width: 100%

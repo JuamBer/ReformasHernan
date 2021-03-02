@@ -114,10 +114,8 @@ header .header .nav nav ul a li{
 
     .hamburger{
         display: inline;
-        position:fixed;
-      background-color:transparent;
-        left:0;
-        top:0;
+        background-color:transparent;
+
         height:30px;
         width:30px;
         padding:20px 20px;
@@ -190,26 +188,47 @@ header .header .nav nav ul a li{
     }
     .menuppal ul{
       margin:0;padding:0;
+      margin-top: 15%;
     }
     .menuppal ul li { 
-      list-style: none;
+        list-style: none;
         text-align:center;
         font-family: Verdadna, Arial, Helvetica;
-        color:$nav-color-text;
-        font-size:1.5rem;
+        color:red;
+        font-size:1.5em;
         line-height:3em;
         height:3em;
-      color:#369;
+        color:#369;
         text-transform:none;
-        font-weight:bold;
+        
     }
     .menuppal ul li a{
       text-decoration:none;
-      color:#369;
+      color:black;
+      font-weight:bold;
+      font-size: 25px;
     }
     .menuppal ul li a:hover{
       text-decoration:none;
       color:#333;
     }
   }
-  
+  @media only screen and (max-width: 700px) {
+    header .header .nav {
+        display: none;
+    }
+    header .header .logo{
+        width: 80%;
+        display: flex;
+        align-items:center ;
+    }
+    header .header .logo img{
+        width: 60%;
+        margin-left: 20%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+    .hamburger {
+        width: 20%;  
+    }
+  }
