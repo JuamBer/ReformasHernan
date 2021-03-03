@@ -8,20 +8,21 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/footer.css">
-
+    <link rel="stylesheet" href="css/slider.css">
+    <script src="js/slider.js"></script>
+    <script src="js/hamburguesa.js"></script>
 </head>
 <body>
-    
-    <!--<div class="datos">
+    <div class="datos">
         <div class="contenedor">
-            <span class="tel">609 981 499</span>
-            <span class="correo">contacto@reformashernan.com</span>
+            <a href="tel:+34665020636" class="tel"><span><img src="img/icons/telefonoArriba.svg" alt=""> 609 981 499</span></a>
+            <a href="mailto:contacto@reformashernan.com" class="correo"><span><img src="img/icons/emailArriba.svg" alt=""> contacto@reformashernan.com</span></a>
         </div>
-    </div>-->
+    </div>
     <header>
         <div class="header">
             <div class="logo">
-                <img src="img/logo.png" alt="">
+                <a href="index.html"><img src="img/logo.png" alt=""></a>
             </div>
             <div class="nav">
                 <nav>
@@ -51,28 +52,65 @@
               </nav>
         </div>
     </header>
-    <script>
-        // selector
-        var menu = document.querySelector('.hamburger');
+    
+<div class="main">
 
-        // method
-        function toggleMenu (event) {
-        this.classList.toggle('is-active');
-        document.querySelector( ".menuppal" ).classList.toggle("is_active");
-        event.preventDefault();
-        }
+    <div class="slider">
+		<!-- fade css -->
+		<div class="myslide fade" style="display: block;">
+			<div class="txt">
+				<h1>IMAGE 1</h1>
+				<p>Web Devoloper<br>Hay que poner algo aquí</p>
+			</div>
+			<img src="img/slider/1.png" style="width: 100%;">
+		</div>
+		
+		<div class="myslide fade">
+			<div class="txt">
+				<h1>IMAGE 2</h1>
+				<p>Web Devoloper<br>Hay que poner algo aquí</p>
+			</div>
+			<img src="img/slider/2.png" style="width: 100%;">
+		</div>
+		
+		<div class="myslide fade">
+			<div class="txt">
+				<h1>IMAGE 3</h1>
+				<p>Web Devoloper<br>Hay que poner algo aquí</p>
+			</div>
+			<img src="img/slider/3.png" style="width: 100%;">
+		</div>
+		
+		<div class="myslide fade">
+			<div class="txt">
+				<h1>IMAGE 4</h1>
+				<p>Web Devoloper<br>Hay que poner algo aquí</p>
+			</div>
+			<img src="img/slider/4.png" style="width: 100%; height: 100%;">
+		</div>
+	
+		<!-- /fade css -->
+		
+		<!-- onclick js -->
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		
+		<div class="dotsbox" style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+			<span class="dot" onclick="currentSlide(4)"></span>
+		</div>
+		<!-- /onclick js -->
+	</div>
 
-        // event
-        menu.addEventListener('click', toggleMenu, false);
-    </script>
-    <div class="main">
-        <div class="slider">
-            <img src="img/slider/1.png" alt="">
-        </div>
+
+     
+
         <div class="servicios">
             <h1>Nuestros Servicios</h1>
-                <div class="limitar"><div class="limitarhijo">
-                <div class="comt">
+                <center>
+                <div class="contenedor">
                     <div class="box">
                         <img src="img/servicios/1.png" alt="">
                         <h1>Construcción de Viviendas</h1>
@@ -104,13 +142,14 @@
                         <a href="servicios/construccion_naves.html">Saber más</a>
                     </div>
                 </div>
-            </div></div>
+                </center>
 
             <div class="mas">
                 <a href="pages/servicios.html">Ver todos nuestros servicios</a>
             </div>
         </div>
         
+    <center>
         <div class="info">
             <div class="contenedor">
                 <div>
@@ -147,10 +186,11 @@
                 </div>
             </div>
         </div>
+    </center>
     </div>
     <footer>
-        <div class="limitar">
-        <div class="limitarhijo">
+        <center>
+        <div class="footer">
             <div class="logo">
                 <img src="img/logo.png" alt="">
             </div>
@@ -158,7 +198,7 @@
                 <ul>
                     <li><b>Datos De Contacto</b></li>
                     <a href="tel:+34665020636"><li>+34 665020636</li></a>
-                    <a href="email:contacto@reformashernan.com"><li>contacto@reformashernan.com</li></a>
+                    <a href="mailto:contacto@reformashernan.com"><li>contacto@reformashernan.com</li></a>
                     <a href="contacto.html"><li>Página de contacto</li></a>
                 </ul>
             </nav>
@@ -171,8 +211,8 @@
                     <a href="contacto.html"><li>youtube</li></a>
                 </ul>
             </nav>  
-        </div>
-        </div>
+        </div>  
+        </center>
     <div class="copy">
         <p>Copyright 2021 ReformasHernan. Todos los derechos reservados. <a href="legal/avisolegal.html">Aviso Legal</a></p>
     </div>            
