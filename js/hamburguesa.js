@@ -1,5 +1,6 @@
-// selector
-var menu = document.querySelector('.hamburger');
+
+    // selector
+const menu = document.querySelector('.hamburger');
 
 // method
 function toggleMenu (event) {

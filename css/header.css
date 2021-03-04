@@ -2,7 +2,7 @@
     padding:0px;
     margin:0px;
     font-size: 18px;
-    font-family:Geneva, "Noto Serif"
+    font-family:Geneva, "Noto Sans JP"
 }
 .Titulo {
     padding: 5%;
@@ -16,6 +16,24 @@ a {
 }
 ul {
     list-style: none;
+}
+a.boton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5%;
+    font-size: 15px;
+    color:black;
+    width: 70%;
+    text-decoration: none;
+    background: white;
+}
+a.boton:hover{
+    color:#fff;
+    background:#FA4738;
+    cursor:pointer;
+    letter-spacing: 1px;
+    transition: 0.15s;
 }
 .datos {
     background: white;

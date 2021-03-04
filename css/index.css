@@ -23,14 +23,7 @@
     font-size: 20px;
     min-height: 7.5vh;
 }
-.main .servicios div.box a{
-    padding-top: 2.5%;
-    padding-bottom: 15%;
-    font-size: 22.5px;
-}
-.main .servicios div.box a:hover{
-    color:brown
-}
+
 .main .servicios div.box img {
     width: 100%;
     background: #eae7e0;
@@ -52,8 +45,10 @@
 }
 .main .servicios .mas a:hover {
     color:white;
-    background:black;
+    background:#FA4738;
     cursor:pointer;
+    letter-spacing: 1px;
+    transition: 0.15s;
 }
 /* INFO */
 .main .info {
@@ -93,11 +88,7 @@
     .main .servicios div.box img {
         width: 60%;
     }
-    .main .servicios div.box a{
-        padding-top: 0%;
-        padding-bottom: 15%;
-        font-size: 22.5px;
-    }
+
     .main .servicios div.box h1{
         font-size: 20px;
         min-height: auto;

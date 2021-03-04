@@ -6,7 +6,7 @@
 }
 
 .Contacto {
-    width: 50%;
+    width: 65%;
     text-align: center;
     color:black;
     float: left;
@@ -39,7 +39,7 @@
     cursor:pointer;
 }
 .Ubicación {
-    width: 50%;
+    width: 35%;
 }
 .Ubicación iframe{
     width: 100%;

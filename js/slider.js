@@ -1,9 +1,9 @@
-const myslide = document.getElementsByClassName('myslide'),
-	  dot = document.getElementsByClassName('dot');
+const myslide = document.querySelectorAll('.myslide'),
+	  dot = document.querySelectorAll('.dot');
+	  
 let counter = 1;
 slidefun(counter);
 
-let timer = setInterval(autoSlide, 8000);
 function autoSlide() {
 	counter += 1;
 	slidefun(counter);
@@ -20,7 +20,7 @@ function currentSlide(n) {
 }
 function resetTimer() {
 	clearInterval(timer);
-	timer = setInterval(autoSlide, 8000);
+	timer = setInterval(autoSlide(), 8000);
 }
 
 function slidefun(n) {
@@ -30,14 +30,14 @@ function slidefun(n) {
 		myslide[i].style.display = "none";
 	}
 	for(i = 0;i<dot.length;i++) {
-		dot[i].className = dot[i].className.replace(' active', '');
+		dot[i].className = dot[i].className.replace('active', '');
 	}
 	if(n > myslide.length){
 	   counter = 1;
 	   }
 	if(n < 1){
 	   counter = myslide.length;
-	   }
+	}
 	myslide[counter - 1].style.display = "block";
-	dot[counter - 1].className += " active";
+	dot[counter - 1].className += "active";
 }
