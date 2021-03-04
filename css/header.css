@@ -2,7 +2,7 @@
     padding:0px;
     margin:0px;
     font-size: 18px;
-    font-family:Geneva, Tahoma, sans-serif
+    font-family:Geneva, "Noto Serif"
 }
 .Titulo {
     padding: 5%;
@@ -243,9 +243,10 @@ header .header .nav nav ul a li{
     header .header .logo img{
         width: 60%;
         margin-left: 20%;
-        padding-top: 1%;
-        padding-bottom: 1%;
+        padding: 1%;
+        padding-top: 5%;
     }
+
     .hamburger {
         width: 20%;  
     }

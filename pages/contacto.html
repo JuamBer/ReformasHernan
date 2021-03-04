@@ -58,12 +58,15 @@
             <div class="Titulo">
               <h1> Contáctanos  </h1>
             </div>
-            <form id="myform" method="post">
+            <form action="mailto:contacto@juamber.com" enctype="text/plain" method="post">
               <input placeholder="Nombre" type="text" name="from_name" />
               <input placeholder="Email" type="text" name="from_email" />
+              <input placeholder="Teléfono" type="text" name="from_tel" />
               <input placeholder="Asunto" type="text" name="subject" />
               <textarea rows="8" placeholder="Texto..." type="text" name="message"></textarea>
               <br/>
+              <input name="Submit" type="submit" value="Enviar" />
+
               <button>Enviar</button>
             </form>
         </div>
