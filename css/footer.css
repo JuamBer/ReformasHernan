@@ -36,16 +36,21 @@ footer .logo img{
     footer .logo img{
         margin-left: 0%;
         width: 60%;
+        padding-top: 10%;
+
     }
     footer nav{
+        padding-top: 10%;
         width: 100%;
         display: inline-block;
     }
     footer nav ul li{
         text-align: center;
+        padding: 1%;
     }
     footer .copy {
         text-align: center;
+        padding-top: 10%;
     }
 
 }

@@ -1,3 +1,7 @@
 .main {
-    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.main .contenedor {
+    width: 1200px;
 }

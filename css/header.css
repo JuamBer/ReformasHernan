@@ -2,7 +2,7 @@
     padding:0px;
     margin:0px;
     font-size: 18px;
-    font-family:Geneva, "Noto Sans JP"
+    font-family:"Noto Sans JP"
 }
 .Titulo {
     padding: 5%;
@@ -10,6 +10,9 @@
 }
 .Titulo h1{
     font-size: 35px;
+}
+.Titulo h1 p{
+    padding: 2.5%;
 }
 a {
     color:black;
@@ -29,11 +32,10 @@ a.boton{
     background: white;
 }
 a.boton:hover{
-    color:#fff;
+    color:white;
     background:#FA4738;
-    cursor:pointer;
     letter-spacing: 1px;
-    transition: 0.15s;
+    cursor:pointer;
 }
 .datos {
     background: white;
@@ -49,8 +51,12 @@ a.boton:hover{
     padding-left: 1.5%;
     padding-right: 1.5%;
     display: flex;
-    align-items: top;
     justify-content:flex-end;
+}
+.datos .contenedor a span{
+    display: flex;
+    align-items: center;
+
 }
 .datos .tel,.correo{
     display: inline-block;
@@ -58,14 +64,21 @@ a.boton:hover{
     align-items: center;
     text-decoration: none;
 }
-.datos .correo{
+.datos a{
+    text-decoration: none;
+}
+.datos .tel,.correo{
     padding-left: 2.5%;
 }
 .datos span img{
-   width: 20px;
+   width: 22.5px;
+   padding: 0;
+   margin: 0;
    padding-right: 10px;
 }
-
+.datos .what img{
+    width: 21px;
+}
 header {
     background-color: #eae7e0;
     color:black;
@@ -151,7 +164,6 @@ header .header .nav nav ul a li{
     .hamburger{
         display: inline;
         background-color:transparent;
-
         height:30px;
         width:30px;
         padding:20px 20px;
@@ -181,7 +193,11 @@ header .header .nav nav ul a li{
         -webkit-transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
         transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
     }
+    ._layer:first-child{
+        margin-top: 7.5%;
+    }
     .hamburger:hover .-top{
+        
         -webkit-transform:translateY(-100%);
         -ms-transform:translateY(-100%);
         transform:translateY(-100%);
@@ -269,12 +285,18 @@ header .header .nav nav ul a li{
         width: 20%;  
     }
   }
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 600px) {
     .datos .correo {
         display: none;
+    }
+    .datos .tel {
+       margin-left: 7.5%;
     }
     .datos .contenedor{
         display: flex;
         justify-content: center;
+        padding-left: 1%;
+        padding-right: 1%;
     }
+    
   }
