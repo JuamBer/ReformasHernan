@@ -1,3 +1,64 @@
+.TituloPres {
+    padding: 5% 2.5% 5% 2.5%;
+    text-align: center;
+}
+.TituloPres h1{
+    font-size: 30px;
+}
+
+.presupuesto {
+    width: 100%;
+    color:black;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5%;
+}
+.presupuesto .contenedor {
+    max-width: 1200px;
+}
+.presupuesto form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.presupuesto form div{
+    width: 50%;
+}
+.presupuesto input,textarea{
+    border:none;
+    width: 90%;
+    padding: 15px;
+    margin-bottom: 20px;
+    color:black;
+    transition: 0.2s;
+    text-align: left;
+    background: #eae7e0;
+    outline: none;
+}
+.presupuesto textarea{
+    resize:none;
+    min-height: 325px;
+    margin-bottom: 0px;
+}
+.presupuesto button {
+    border:none;
+    display: inline-block;
+    width: 95%;
+    background: #eae7e0;
+    text-decoration: none;
+    transition: 0.2s;
+    font-size: 16px;
+    color:black;
+    letter-spacing: 1px;
+    padding: 2%;
+}
+.presupuesto button:hover {
+    color:white;
+    background:#FA4738;
+    letter-spacing: 2px;
+    cursor:pointer;
+}
 /* SERVICIOS */
 .main .servicios {
     background: #eae7e0;
@@ -111,5 +172,28 @@
     }
     .main .info .contenedor div img{
         width: 20%;
+    }
+    .presupuesto  {
+        width: 95%;
+        padding: 2.5%;
+        margin-bottom: 10%;
+    }
+    .presupuesto form {
+        width: 100%;
+        display: inline;
+    }
+    .presupuesto form div{
+        width: 100%;
+    }
+    .presupuesto input,textarea{
+        width: calc(100% - 30px);
+        margin-bottom: 15px;
+    }
+    .presupuesto textarea{
+        min-height: 325px;
+        margin-bottom: 15px;
+    }
+    .presupuesto button {
+        width: 100%;
     }
 }
