@@ -1,19 +1,21 @@
 # Página Web Reformas Hernan
 
-## Reformas Hernan 📌
-
 Reformas Hernan es una empresa de construcción, instalaciones eléctricas y reformas
 de todo tipo.
-
-## Servidor 📌
-
-* **Github Pages** - He usado Github Pages como servidor.
 
 ## Tecnologías 🚀
 
 * **HTML**  
 * **CSS** 
 * **JavaScript** 
+
+## Servidor 📌
+
+* **Github Pages** - He usado Github Pages como servidor.
+
+## Control De Versiones 📌
+
+* **Git y GitHub**
 
 ## Autor ✒️
 
