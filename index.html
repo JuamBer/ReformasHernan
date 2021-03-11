@@ -17,12 +17,7 @@
     <link rel="stylesheet" href="css/slider.css">
     <script src="js/email.js"></script>
 
-<script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-<script type="text/javascript">
-(function() {
-emailjs.init("user_GeSlV5n8zYEfFbJsO4Iri");
-})();
-</script>
+
 </head>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-BX8MY38HGN"></script>
@@ -126,7 +121,7 @@ emailjs.init("user_GeSlV5n8zYEfFbJsO4Iri");
     <div class="presupuesto">
         <div class="contenedor">
         
-        <form>
+        <form id="">
             <div class="texto">
                 <textarea placeholder="Danos detalles del proyecto. Dimensiones y materiales a utilizar." type="text" name="message"></textarea>
             </div>
@@ -135,12 +130,12 @@ emailjs.init("user_GeSlV5n8zYEfFbJsO4Iri");
                 <input placeholder="Email" type="text" id="from_name" />
                 <input placeholder="Asunto" type="text" id="msj" />
                 <br>
-                <button onclick="sendMail()">ENVIAR</button>
+                <button onclick='sendMail()'>ENVIAR</button>
             </div>
-           
+        </form>   
             
             
-        </form>
+        
         </div>
     </div>
         <div class="servicios">
@@ -257,6 +252,35 @@ emailjs.init("user_GeSlV5n8zYEfFbJsO4Iri");
 <script src="js/hamburguesa.js"></script>
 <script src="js/slider.js"></script>
 
+<script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+<script type="text/javascript">
+(function() {
+emailjs.init("user_GeSlV5n8zYEfFbJsO4Iri");
+})();
+console.log("init");
+</script>
+<script>
+
+var myform = $("form#myform");
+myform.submit(function(event){
+event.preventDefault();
+
+// Change to your service ID, or keep using the default service
+var service_id = "default_service";
+var template_id = "personalweb";
+
+myform.find("button").text("Sending...");
+emailjs.sendForm(service_id,template_id,myform[0])
+  .then(function(){
+    alert("Sent!");
+     myform.find("button").text("¡Sent");
+  }, function(err) {
+     alert("¡Error E-mail!\r\n Response:\n " + JSON.stringify(err));
+     myform.find("button").text("¡Sent!");
+  });
+return false;
+});
+</script>
 </body>
 
 </html>

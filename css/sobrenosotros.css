@@ -23,6 +23,8 @@
 .ContenedorPequeño img {
     width: 75%;
     margin-left: 25%;
+    height: 350px;
+    object-fit: cover;
 }
 .ContenedorPequeño p {
     max-width: 75%;
