@@ -1,13 +1,13 @@
- .main .sobrenosotros {
+ .sobrenosotros {
      display: flex;
      justify-content: center;
      padding-left: 5%;
      padding-right: 5%;
  }
- .main div.personas {
+ div.personas {
     padding-bottom:5%;
  }
- .main .sobrenosotros .contenedor {
+.sobrenosotros .contenedor {
      max-width: 1200px;
  }
  .ContenedorGrande {

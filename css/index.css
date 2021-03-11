@@ -5,7 +5,7 @@
 .TituloPres h1{
     font-size: 30px;
 }
-
+ /* PRESUPUESTO */
 .presupuesto {
     width: 100%;
     color:black;
@@ -60,43 +60,41 @@
     cursor:pointer;
 }
 /* SERVICIOS */
-.main .servicios {
+.servicios {
     background: #eae7e0;
     width: 100%;
     padding-top: 5%;
     padding-bottom: 5%;
     justify-content: center;
 }
-.main .servicios > h1{
+ .servicios > h1{
     text-align: center;
     font-size: 40px;
 }
-.main .servicios .contenedor {
+ .servicios .contenedor {
     max-width: 1200px;
 }
-.main .servicios div.box {
+.servicios div.box {
     width: 32.383%;
     padding: 0.3%;
     align-items: center;
     display: inline-block;
 }
-.main .servicios div.box h1{
+ .servicios div.box h1{
     font-size: 20px;
     min-height: 7.5vh;
 }
-
-.main .servicios div.box img {
+ .servicios div.box img {
     width: 100%;
     background: #eae7e0;
     padding-bottom: 2.5%;
     padding-top: 5%;
 }
-
-.main .servicios .mas {
+ .servicios .mas {
     text-align: center;
     padding-top: 5%;
 }
-.main .servicios .mas a{
+ .servicios .mas a{
     display: inline-block;
     width: 33%;
     padding: 1.25%;
@@ -104,7 +102,7 @@
     text-decoration: none;
     transition: 0.2s;
 }
-.main .servicios .mas a:hover {
+ .servicios .mas a:hover {
     color:white;
     background:#FA4738;
     cursor:pointer;
@@ -112,88 +110,93 @@
     transition: 0.15s;
 }
 /* INFO */
-.main .info {
+ .info {
     max-width: 1200px;
     padding-top: 10%;
     padding-bottom: 10%;
 }
-.main .info .contenedor {
+.info .contenedor {
     justify-content: space-around;
     display: flex;
 }
-.main .info .contenedor div {
+.info .contenedor div {
     width: 30%;
     padding: 1.5%;
     text-align:center;
 }
-.main .info .contenedor div img{
+.info .contenedor div img{
     width: 30%;
 }
-.main .info .contenedor div h2{
+.info .contenedor div h2{
     padding: 7.5%;
     padding-bottom: 2.5%;
 }
 @media only screen and (max-width: 700px) {
+   /* PRESUPUESTO */
+    .presupuesto form {
+        width: 100%;
+        display: inline;
+    }
+
+    .presupuesto form div {
+        width: 100%;
+    }
+
+    .presupuesto input,
+    textarea {
+        width: calc(100% - 30px);
+        margin-bottom: 15px;
+    }
+
+    .presupuesto textarea {
+        min-height: 325px;
+        margin-bottom: 15px;
+    }
+
+    .presupuesto button {
+        width: 100%;
+    }
     /* SERVICIOS */
-    .main .servicios div.box {
+    .servicios div.box {
         width: 95%;
         padding: 2.5%;
         align-items: center;
         margin-bottom: 5%;
     }
-    .main .servicios > h1{
+    .servicios > h1{
         text-align: center;
         font-size: 30px;
         padding: 2.5%;
     }
-    .main .servicios div.box img {
+    .servicios div.box img {
         width: 60%;
     }
-
-    .main .servicios div.box h1{
+    .servicios div.box h1{
         font-size: 20px;
         min-height: auto;
         padding-bottom: 2.5%;
     }
-    .main .servicios .mas a{
+    .servicios .mas a{
         width: 50%;
         padding: 3%;
     }
     /* INFO */
-    .main .info .contenedor {
+    .info .contenedor {
         justify-content:center;
         align-items: center;
         display:inline-block;
     }
-    .main .info .contenedor div {
+    .info .contenedor div {
         display: inline-block;
         width: 95%;
         margin-bottom: 10%;
     }
-    .main .info .contenedor div img{
+    .info .contenedor div img{
         width: 20%;
     }
     .presupuesto  {
         width: 95%;
         padding: 2.5%;
         margin-bottom: 10%;
-    }
-    .presupuesto form {
-        width: 100%;
-        display: inline;
-    }
-    .presupuesto form div{
-        width: 100%;
-    }
-    .presupuesto input,textarea{
-        width: calc(100% - 30px);
-        margin-bottom: 15px;
-    }
-    .presupuesto textarea{
-        min-height: 325px;
-        margin-bottom: 15px;
-    }
-    .presupuesto button {
-        width: 100%;
     }
 }
