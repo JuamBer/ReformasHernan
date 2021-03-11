@@ -1,13 +1,12 @@
 function sendMail(params){
   var tempParams={
+    to_name:document.getElementById("to_name").value,
     from_name:document.getElementById("from_name").value,
-    from_email:document.getElementById("from_email").value,
-    from_tel:document.getElementById("from_tel").value,
-    message:document.getElementById("subject").value
+    message:document.getElementById("msj").value
   };
 
-  emailjs.send("gmail","template_4i1c0yj",tempParams)
+  emailjs.send('gmail','template_4i1c0yj',tempParams)
   .then(function(res){
-    console.log("succes", res.status);
+    console.log("succes",  res.status);
   })
 }

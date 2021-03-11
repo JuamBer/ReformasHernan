@@ -15,17 +15,20 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/slider.css">
+    <script src="js/email.js"></script>
+
+<script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+<script type="text/javascript">
+(function() {
+emailjs.init("user_GeSlV5n8zYEfFbJsO4Iri");
+})();
+</script>
 </head>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-BX8MY38HGN"></script>
 <script src="js/analytics.js"></script>
 
-<script type = "text / javascript" src = "https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js" > </script>
-<script type = "text / javascript" >
-( función () {
-emailjs.init ( " usuario_GeSlV5n8zYEfFbJsO4Iri " ) ;
-}) () ;
-</script>
+
 <body>
     <div class="datos">
         <div class="contenedor">
@@ -128,12 +131,11 @@ emailjs.init ( " usuario_GeSlV5n8zYEfFbJsO4Iri " ) ;
                 <textarea placeholder="Danos detalles del proyecto. Dimensiones y materiales a utilizar." type="text" name="message"></textarea>
             </div>
             <div class="datoscontacto">
-                <input placeholder="Nombre" type="text" name="from_name" />
-                <input placeholder="Email" type="text" name="from_email" />
-                <input placeholder="Teléfono" type="text" name="from_tel" />
-                <input placeholder="Asunto" type="text" name="subject" />
+                <input placeholder="Nombre" type="text" id="to_name" />
+                <input placeholder="Email" type="text" id="from_name" />
+                <input placeholder="Asunto" type="text" id="msj" />
                 <br>
-                <button onclick="sendEmail()">ENVIAR</button>
+                <button onclick="sendMail()">ENVIAR</button>
             </div>
            
             
@@ -254,7 +256,6 @@ emailjs.init ( " usuario_GeSlV5n8zYEfFbJsO4Iri " ) ;
     </footer>
 <script src="js/hamburguesa.js"></script>
 <script src="js/slider.js"></script>
-<script src="js/email.js"></script>
 
 </body>
 
