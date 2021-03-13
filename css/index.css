@@ -1,67 +1,7 @@
-.TituloPres {
-    padding: 5% 2.5% 5% 2.5%;
-    text-align: center;
-}
-.TituloPres h1{
-    font-size: 30px;
-}
- /* PRESUPUESTO */
-.presupuesto {
-    width: 100%;
-    color:black;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 5%;
-}
-.presupuesto .contenedor {
-    max-width: 1200px;
-}
-.presupuesto form {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.presupuesto form div{
-    width: 50%;
-}
-.presupuesto input,textarea{
-    border:none;
-    width: 90%;
-    padding: 15px;
-    margin-bottom: 20px;
-    color:black;
-    transition: 0.2s;
-    text-align: left;
-    background: #eae7e0;
-    outline: none;
-}
-.presupuesto textarea{
-    resize:none;
-    min-height: 325px;
-    margin-bottom: 0px;
-}
-.presupuesto button {
-    border:none;
-    display: inline-block;
-    width: 95%;
-    background: #eae7e0;
-    text-decoration: none;
-    transition: 0.2s;
-    font-size: 16px;
-    color:black;
-    letter-spacing: 1px;
-    padding: 2%;
-}
-.presupuesto button:hover {
-    color:white;
-    background:#FA4738;
-    letter-spacing: 2px;
-    cursor:pointer;
-}
+
 /* SERVICIOS */
 .servicios {
-    background: #eae7e0;
+    background:#fff;
     width: 100%;
     padding-top: 5%;
     padding-bottom: 5%;
@@ -70,15 +10,19 @@
  .servicios > h1{
     text-align: center;
     font-size: 40px;
+    padding-bottom: 5%;
 }
  .servicios .contenedor {
     max-width: 1200px;
 }
 .servicios div.box {
-    width: 32.383%;
-    padding: 0.3%;
+    width: 30%;
+    margin: 1%;
     align-items: center;
+    background: #eae7e0;
     display: inline-block;
+    padding-bottom: 2.5%;
+    margin-bottom: 2.5%;
 }
  .servicios div.box h1{
     font-size: 20px;
@@ -86,19 +30,38 @@
 }
  .servicios div.box img {
     width: 100%;
-    background: #eae7e0;
     padding-bottom: 2.5%;
-    padding-top: 5%;
 }
+a.boton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5%;
+    font-size: 15px;
+    color: #fff;
+    width: 70%;
+    text-decoration: none;
+    background: #000;
+    transition: 0.2s;
+}
+
+a.boton:hover {
+    color: white;
+    background: #FA4738;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
  .servicios .mas {
     text-align: center;
-    padding-top: 5%;
 }
  .servicios .mas a{
     display: inline-block;
     width: 33%;
     padding: 1.25%;
-    background: white;
+    background: #000;
+    color:white;
+    margin:0;
     text-decoration: none;
     transition: 0.2s;
 }
@@ -110,7 +73,7 @@
     transition: 0.15s;
 }
 /* INFO */
- .info {
+.info {
     max-width: 1200px;
     padding-top: 10%;
     padding-bottom: 10%;
@@ -130,6 +93,68 @@
 .info .contenedor div h2{
     padding: 7.5%;
     padding-bottom: 2.5%;
+}
+
+/* PRESUPUESTO */
+.presupuesto {
+    background: #eae7e0;;
+    width: 100%;
+    color: black;
+    text-align: center;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+.presupuesto h1 {
+    padding-bottom: 5%;
+    font-size: 40px;
+}
+.presupuesto .contenedor {
+   max-width: 1200px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.presupuesto .contenedor div {
+    width: 50%;
+}
+
+.presupuesto input,textarea {
+    border: none;
+    width: 90%;
+    padding: 15px;
+    margin-bottom: 20px;
+    color: black;
+    transition: 0.2s;
+    text-align: left;
+    background: white;
+    outline: none;
+}
+
+.presupuesto textarea {
+    resize: none;
+    min-height: 325px;
+    margin-bottom: 0px;
+}
+
+.presupuesto button {
+    border: none;
+    display: inline-block;
+    width: 95%;
+    background: #000;
+    text-decoration: none;
+    transition: 0.2s;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    padding: 2%;
+}
+
+.presupuesto button:hover {
+    color: white;
+    background: #FA4738;
+    letter-spacing: 2px;
+    cursor: pointer;
 }
 @media only screen and (max-width: 700px) {
    /* PRESUPUESTO */

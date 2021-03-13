@@ -29,16 +29,16 @@
     display: inline-block;
     width: 80%;
     padding: 1.25%;
-    background: #eae7e0;
+    background: #000;
     text-decoration: none;
     transition: 0.2s;
     font-size: 16px;
-    color:black;
+    color:white;
     letter-spacing: 1px;
     padding: 2%;
 }
 .Contacto button:hover {
-    color:white;
+    
     background:#FA4738;
     letter-spacing: 2px;
     cursor:pointer;

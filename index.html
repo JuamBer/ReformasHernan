@@ -15,15 +15,13 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/slider.css">
-    <script src="js/email.js"></script>
 
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript" src="js/iniciar_email.js"></script>
 </head>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-BX8MY38HGN"></script>
 <script src="js/analytics.js"></script>
-
-
 <body>
     <div class="datos">
         <div class="contenedor">
@@ -63,224 +61,184 @@
                   <li><a href="pages/sobrenosotros.html">Sobre Nosotros</a></li>
                   <li><a href="pages/contacto.html">Contacto</a></li>
                 </ul>
-              </nav>
-
-
+            </nav>
         </div>
     </header>
-    
-<div class="main">
-
-    <div class="slider">
-		<!-- fade css -->
-		<div class="myslide fade" style="display: block;">
-			<div class="txt">
-				<h1>REFORMAS HERNÁN</h1>
-				<p>Construcciones y Reformas de Todo Tipo</p>
-			</div>
-			<img src="img/slider/slider1.png" alt="FotoReformasHernán" style="width: 100%; height: 100%;">
+<!-- SLIDER -->
+<div class="slider">
+	<div class="myslide fade" style="display: block;">
+		<div class="txt">
+		    <h1>REFORMAS HERNÁN</h1>
+			<p>Construcciones y Reformas de Todo Tipo</p>
 		</div>
-
-        <div class="myslide fade">
-			<div class="txt">
-				<h1>A TU MEDIDA</h1>
-				<p>Nos Ajustamos a tus Necesidades</p>
-			</div>
-			<img src="img/slider/slider2.png" alt="FotoReformasHernán" style="width: 100%; height: 100%;">
-		</div>
-
-		<div class="myslide fade">
-			<div class="txt">
-				<h1>PAGA LO JUSTO</h1>
-				<p>Nos Ajustamos a tu Presupuesto</p>
-			</div>
-			<img src="img/slider/slider3.png" alt="FotoReformasHernán" style="width: 100%; height: 100%;">
-		</div>
-
-		<div class="myslide fade">
-			<div class="txt">
-				<h1>DISEÑO DE INTERIORES</h1>
-				<p>Ofrecemos Diseños 3D</p>
-			</div>
-			<img src="img/slider/slider4.png" alt="FotoReformasHernán" style="width: 100%; height: 100%;">
-		</div>
-        		
-		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  		<a class="next" onclick="plusSlides(1)">&#10095;</a>
-		
-		<div class="dotsbox" style="text-align:center">
-			<span class="dot" onclick="currentSlide(1)"></span>
-			<span class="dot" onclick="currentSlide(2)"></span>
-			<span class="dot" onclick="currentSlide(3)"></span>
-			<span class="dot" onclick="currentSlide(4)"></span>
-		</div>
+		<img src="img/slider/slider1.png" alt="FotoReformasHernán" style="width: 100%; height: 100%;">
 	</div>
-    <div class="TituloPres">
-        <h1> PIDE TU PRESUPUESTO GRATIS </h1>
-    </div>
-    <div class="presupuesto">
-        <div class="contenedor">
-        
-        <form id="">
-            <div class="texto">
-                <textarea placeholder="Danos detalles del proyecto. Dimensiones y materiales a utilizar." type="text" name="message"></textarea>
-            </div>
-            <div class="datoscontacto">
-                <input placeholder="Nombre" type="text" id="to_name" />
-                <input placeholder="Email" type="text" id="from_name" />
-                <input placeholder="Asunto" type="text" id="msj" />
-                <br>
-                <button onclick='sendMail()'>ENVIAR</button>
-            </div>
-        </form>   
-            
-            
-        
-        </div>
-    </div>
-        <div class="servicios">
-            <h1>NUESTROS SERVICIOS</h1>
-                <center>
-                <div class="contenedor">
-                    <div class="box">
-                        <img src="img/servicios/Reformas/Reformas1-Cuadrada.png" alt="Reformas Integrales">
-                        <h1>REFORMAS INTEGRALES</h1>
-                        <a href="pages/servicios/reformas_viviendas.html" class="boton">SABER MÁS</a>
-                    </div>
-                    <div class="box">
-                        <img src="img/servicios/ReformasBaño/ReformasBaño1-Cuadrada.png" alt="Reformas De Baños">
-                        <h1>REFORMAS DE BAÑOS</h1>
-                        <a href="pages/servicios/reformas_baños.html" class="boton">SABER MÁS</a>
-                    </div>
-                    <div class="box">
-                        <img src="img/servicios/ReformasCocina/ReformasCocina1-Cuadrada.png" alt="Reformas De Cocina">
-                        <h1>REFORMAS DE COCINA</h1>
-                        <a href="pages/servicios/reformas_cocinas.html" class="boton">SABER MÁS</a>
-                    </div>
-                    <div class="box">
-                        <img src="img/servicios/Terrazas/Terraza1-Cuadrada.png" alt="Terrazas">
-                        <h1>TERRAZAS</h1>
-                        <a href="pages/servicios/reformas_terrazas.html" class="boton">SABER MÁS</a>
-                    </div>
-                    <div class="box">
-                        <img src="img/servicios/InstalacionesElectricas/InstalacionesElectricas1-Cuadrada.png" alt="Instalaciones Eléctricas">
-                        <h1>INSTALACIONES ELÉCTRICAS</h1>
-                        <a href="pages/servicios/instalaciones_electricas.html" class="boton">SABER MÁS</a>
-                    </div>
-                    <div class="box">
-                        <img src="img/servicios/Impermeabilizacion/Impermeabilizacion1-Cuadrada.png" alt="Impermeabilización">
-                        <h1>IMPERMEABILIZACIÓN</h1>
-                        <a href="pages/servicios/impermeabilizacion.html" class="boton">SABER MÁS</a>
-                    </div>
-
-                </div>
-                </center>
-
-            <div class="mas">
-                <a href="pages/servicios.html">VER TODOS NUESTROS SERVICIOS</a>
-            </div>
-        </div>
-        
+    <div class="myslide fade">
+		<div class="txt">
+			<h1>A TU MEDIDA</h1>
+			<p>Nos Ajustamos a tus Necesidades</p>
+		</div>
+		<img src="img/slider/slider2.png" alt="FotoReformasHernán" style="width: 100%; height: 100%;">
+	</div>
+	<div class="myslide fade">
+		<div class="txt">
+			<h1>PAGA LO JUSTO</h1>
+			<p>Nos Ajustamos a tu Presupuesto</p>
+		</div>
+		<img src="img/slider/slider3.png" alt="FotoReformasHernán" style="width: 100%; height: 100%;">
+	</div>
+	<div class="myslide fade">
+		<div class="txt">
+			<h1>DISEÑO DE INTERIORES</h1>
+			<p>Ofrecemos Diseños 3D</p>
+		</div>
+		<img src="img/slider/slider4.png" alt="FotoReformasHernán" style="width: 100%; height: 100%;">
+	</div>
+        		
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		
+	<div class="dotsbox" style="text-align:center">
+		<span class="dot" onclick="currentSlide(1)"></span>
+		<span class="dot" onclick="currentSlide(2)"></span>
+		<span class="dot" onclick="currentSlide(3)"></span>
+		<span class="dot" onclick="currentSlide(4)"></span>
+	</div>
+</div>
+<!-- SERVICIOS -->
+<div class="servicios">
+    <h1>NUESTROS SERVICIOS</h1>
     <center>
-        <div class="info">
-            <div class="contenedor">
-                <div>
-                    <img src="img/icons/info/calendario.svg" alt="Cumplimiento De Plazos">
-                    <h2>CUMPLIMIENTO DE PLAZOS</h2>
-                    <p>Planificamos todos nuestros proyectos, lo que nos permite comprometernos en los plazos de ejecución.</p>   
-                </div>
-                <div>
-                    <img src="img/icons/info/llave.svg" alt="Precio Cerrado">
-                    <h2>PRECIO CERRADO</h2>
-                    <p>Sin sorpresas ni sobrecostes posteriores de última hora.</p>
-                </div>
-                <div>
-                    <img src="img/icons/info/telefono.svg" alt="Atención Personalizada">
-                    <h2>ATENCIÓN PERSONALIZADA</h2>
-                    <p>Un profesional será el responsable y coordinador de la obra.</p>
-                </div>
-            </div>
-            <div class="contenedor">
-                <div>
-                    <img src="img/icons/info/limpieza.svg" alt="Limpieza">
-                    <h2>LIMPIEZA</h2>
-                    <p>Todos nuestros profesionales son conscientes de ella y mantienen las obras en perfectas condiciones.</p>
-                </div>
-                <div>
-                    <img src="img/icons/info/licencia.svg" alt="Obtención De Limpieza">
-                    <h2>OBTENCIÓN DE LICENCIAS</h2>
-                    <p>Te asesoramos para la obtención y tramitación de las licencias de obra.</p>
-                </div>
-                <div>
-                    <img src="img/icons/info/cohete.svg" alt="Innovación">
-                    <h2>INNOVACIÓN</h2>
-                    <p>Estamos a la vanguardia en la utilización de materiales y nuevas tecnologías.</p>
-                </div>
-            </div>
+    <div class="contenedor">
+        <div class="box">
+            <img src="img/servicios/Reformas/Reformas1-Cuadrada.png" alt="Reformas Integrales">
+            <h1>REFORMAS INTEGRALES</h1>
+            <a href="pages/servicios/reformas_viviendas.html" class="boton">SABER MÁS</a>
         </div>
-    </center>
+        <div class="box">
+            <img src="img/servicios/ReformasBaño/ReformasBaño1-Cuadrada.png" alt="Reformas De Baños">
+            <h1>REFORMAS DE BAÑOS</h1>
+            <a href="pages/servicios/reformas_baños.html" class="boton">SABER MÁS</a>
+        </div>
+        <div class="box">
+            <img src="img/servicios/ReformasCocina/ReformasCocina1-Cuadrada.png" alt="Reformas De Cocina">
+            <h1>REFORMAS DE COCINA</h1>
+            <a href="pages/servicios/reformas_cocinas.html" class="boton">SABER MÁS</a>
+        </div>
+        <div class="box">
+            <img src="img/servicios/Terrazas/Terraza1-Cuadrada.png" alt="Terrazas">
+            <h1>TERRAZAS</h1>
+            <a href="pages/servicios/reformas_terrazas.html" class="boton">SABER MÁS</a>
+        </div>
+        <div class="box">
+            <img src="img/servicios/InstalacionesElectricas/InstalacionesElectricas1-Cuadrada.png" alt="Instalaciones Eléctricas">
+            <h1>INSTALACIONES ELÉCTRICAS</h1>
+            <a href="pages/servicios/instalaciones_electricas.html" class="boton">SABER MÁS</a>
+        </div>
+        <div class="box">
+            <img src="img/servicios/Impermeabilizacion/Impermeabilizacion1-Cuadrada.png" alt="Impermeabilización">
+            <h1>IMPERMEABILIZACIÓN</h1>
+            <a href="pages/servicios/impermeabilizacion.html" class="boton">SABER MÁS</a>
+        </div>
     </div>
-    <footer>
-        <center>
-        <div class="footer">
-            <div class="logo">
-                <img src="img/logo2.png" alt="Reformas Hernán">
-            </div>
-            <nav>
-                <ul>
-                    <li><b>DATOS DE CONTACTO</b></li>
-                    <a href="tel:+34675805574"><li>+34 34675805574</li></a>
-                    <a href="mailto:contacto@reformashernan.com"><li>contacto@reformashernan.com</li></a>
-                    <a href="https://api.whatsapp.com/send?phone=+34675805574"><li>Whatsapp</li></a>
-                </ul>
-            </nav>
+    </center>
+
+    <div class="mas">
+        <a href="pages/servicios.html">VER TODOS NUESTROS SERVICIOS</a>
+    </div>
+</div>
+
+<!-- FORMULARIO PRESUPUESTO -->
+<div class="presupuesto">
+    <h1>¡ PIDE TU PRESUPUESTO GRATIS !</h1>
+    <center>
+    <div class="contenedor">
+        <div class="texto">
+            <textarea placeholder="Danos detalles del proyecto. Dimensiones y materiales a utilizar." type="text" id="msg" name="msg"></textarea>
+        </div>
+        <div class="datoscontacto">
+            <input placeholder="Nombre" type="text" id="name" name="name"/>
+            <input placeholder="Email" type="text" id="email" name="email"/>
+            <input placeholder="Teléfono" type="text" id="tel" name="tel"/>
+            <input placeholder="Asunto" type="text" id="asunto" name="asunto"/>
+            <br>
+            <button onclick="enviarCorreo()">ENVIAR</button>
+        </div>
+    </div>
+    </center>
+</div>
+<!-- INFO -->
+<center>
+<div class="info">
+    <div class="contenedor">
+        <div>
+            <img src="img/icons/info/calendario.svg" alt="Cumplimiento De Plazos">
+            <h2>CUMPLIMIENTO DE PLAZOS</h2>
+            <p>Planificamos todos nuestros proyectos, lo que nos permite comprometernos en los plazos de ejecución.</p>   
+        </div>
+        <div>
+            <img src="img/icons/info/llave.svg" alt="Precio Cerrado">
+            <h2>PRECIO CERRADO</h2>
+            <p>Sin sorpresas ni sobrecostes posteriores de última hora.</p>
+        </div>
+        <div>
+            <img src="img/icons/info/telefono.svg" alt="Atención Personalizada">
+            <h2>ATENCIÓN PERSONALIZADA</h2>
+            <p>Un profesional será el responsable y coordinador de la obra.</p>
+        </div>
+    </div>
+    <div class="contenedor">
+        <div>
+            <img src="img/icons/info/limpieza.svg" alt="Limpieza">
+            <h2>LIMPIEZA</h2>
+            <p>Todos nuestros profesionales son conscientes de ella y mantienen las obras en perfectas condiciones.</p>
+        </div>
+        <div>
+            <img src="img/icons/info/licencia.svg" alt="Obtención De Limpieza">
+            <h2>OBTENCIÓN DE LICENCIAS</h2>
+            <p>Te asesoramos para la obtención y tramitación de las licencias de obra.</p>
+        </div>
+        <div>
+            <img src="img/icons/info/cohete.svg" alt="Innovación">
+            <h2>INNOVACIÓN</h2>
+            <p>Estamos a la vanguardia en la utilización de materiales y nuevas tecnologías.</p>
+        </div>
+    </div>
+</div>
+</center>
+</div>    
+<!-- FOOTER -->
+<footer>
+    <center>
+    <div class="footer">
+        <div class="logo">
+            <img src="img/logo2.png" alt="Reformas Hernán">
+        </div>
+        <nav>
+            <ul>
+                <li><b>DATOS DE CONTACTO</b></li>
+                <a href="tel:+34675805574"><li>+34 34675805574</li></a>
+                <a href="mailto:contacto@reformashernan.com"><li>contacto@reformashernan.com</li></a>
+                <a href="https://api.whatsapp.com/send?phone=+34675805574"><li>Whatsapp</li></a>
+            </ul>
+        </nav>
             
-            <nav>
-                <ul>
-                    <li><b>REDES SOCIALES</b></li>
-                    <a href="https://instagram.com/reformashernan" target="_blank"><li>Instagram</li></a>
-                    <a href="https://www.facebook.com/hernan.reformas/" target="_blank"><li>Facebook</li></a>
-                    <a href="https://www.youtube.com/channel/UC5FkFZflgu-fzb2xRFi6Yaw" target="_blank"><li>Youtube</li></a>
-                </ul>
-            </nav>  
-        </div>  
-        </center>
+        <nav>
+            <ul>
+                <li><b>REDES SOCIALES</b></li>
+                <a href="https://instagram.com/reformashernan" target="_blank"><li>Instagram</li></a>
+                <a href="https://www.facebook.com/hernan.reformas/" target="_blank"><li>Facebook</li></a>
+                <a href="https://www.youtube.com/channel/UC5FkFZflgu-fzb2xRFi6Yaw" target="_blank"><li>Youtube</li></a>
+            </ul>
+        </nav>  
+    </div>  
+    </center>
     <div class="copy">
         <p>© 2021 ReformasHernan. Todos los derechos reservados. <a href="pages/legal/avisolegal.html">Aviso Legal</a></p>
     </div>            
-    </footer>
+</footer>
 <script src="js/hamburguesa.js"></script>
 <script src="js/slider.js"></script>
-
-<script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-<script type="text/javascript">
-(function() {
-emailjs.init("user_GeSlV5n8zYEfFbJsO4Iri");
-})();
-console.log("init");
-</script>
-<script>
-
-var myform = $("form#myform");
-myform.submit(function(event){
-event.preventDefault();
-
-// Change to your service ID, or keep using the default service
-var service_id = "default_service";
-var template_id = "personalweb";
-
-myform.find("button").text("Sending...");
-emailjs.sendForm(service_id,template_id,myform[0])
-  .then(function(){
-    alert("Sent!");
-     myform.find("button").text("¡Sent");
-  }, function(err) {
-     alert("¡Error E-mail!\r\n Response:\n " + JSON.stringify(err));
-     myform.find("button").text("¡Sent!");
-  });
-return false;
-});
-</script>
+<script src="js/email.js"></script>
 </body>
-
 </html>

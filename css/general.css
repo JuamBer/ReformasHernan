@@ -26,24 +26,7 @@ ul {
     list-style: none;
 }
 
-a.boton {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2.5%;
-    font-size: 15px;
-    color: black;
-    width: 70%;
-    text-decoration: none;
-    background: white;
-}
 
-a.boton:hover {
-    color: white;
-    background: #FA4738;
-    letter-spacing: 1px;
-    cursor: pointer;
-}
 
 .limitar {
     justify-content: space-around;

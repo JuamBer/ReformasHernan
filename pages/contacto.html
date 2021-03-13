@@ -14,7 +14,9 @@
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/contacto.css">
     <link rel="stylesheet" href="../css/footer.css">
-    <script src="../js/email.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript" src="../js/iniciar_email.js"></script>
 </head>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-BX8MY38HGN"></script>
@@ -71,16 +73,14 @@
               También puedes llamarnos al teléfono gratuito <b>609 981 499</b> o enviarnos un correo a contacto@reformashernan.com</p>
             
             </div>
-            <form action="mailto:contacto@juamber.com" enctype="text/plain" method="post">
-              <input placeholder="Nombre" type="text" name="from_name" />
-              <input placeholder="Email" type="text" name="from_email" />
-              <input placeholder="Teléfono" type="text" name="from_tel" />
-              <input placeholder="Asunto" type="text" name="subject" />
-              <textarea rows="8" placeholder="Texto..." type="text" name="message"></textarea>
+              <input placeholder="Nombre" type="text" id="name" name="name" />
+              <input placeholder="Email" type="text" id="email" name="email" />
+              <input placeholder="Teléfono" type="text" id="tel" name="tel" />
+              <input placeholder="Asunto" type="text" id="asunto" name="asunto" />
+              <textarea rows="8" placeholder="Texto..." type="text" id="msg" name="msg"></textarea>
               <br/>
 
-              <button>ENVIAR</button>
-            </form>
+              <button onclick="enviarCorreo()">ENVIAR</button>
         </div>
     
     
@@ -125,5 +125,6 @@
     </div>            
     </footer>
 <script src="../js/hamburguesa.js"></script>
+<script src="../js/email.js"></script>
 </body>
 </html>

@@ -4,49 +4,47 @@
      padding-left: 5%;
      padding-right: 5%;
  }
- div.personas {
-    padding-bottom:5%;
- }
+
 .sobrenosotros .contenedor {
      max-width: 1200px;
  }
- .ContenedorGrande {
+.persona {
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }     
-.ContenedorPequeño {
+.persona div {
     width: 48%;
     padding: 1%;
 }
-.ContenedorPequeño img {
+.persona div img {
     width: 75%;
     margin-left: 25%;
     height: 350px;
     object-fit: cover;
 }
-.ContenedorPequeño p {
+.persona div p {
     max-width: 75%;
     padding-top: 2.5%;
 }
         
 @media only screen and (max-width: 550px) {
-.ContenedorGrande {
+.persona {
     width: 100%;
     display: inline;
     margin-top: 50px;
 }  
-.ContenedorPequeño {
+.persona div {
     width: 100%;
     text-align: center;
 }
-.ContenedorPequeño img {
+.persona div img {
     margin-top: 50px;
     width: 80%;
     margin:0;
 }
-.ContenedorPequeño p,h4 {
+.persona div p,h4 {
     max-width: 100%;
     padding-top: 2.5%;
     padding-bottom: 2.5%;

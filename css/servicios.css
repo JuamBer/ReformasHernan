@@ -4,68 +4,75 @@
     display: flex;
     justify-content: center;
 }
+
 .servicios .contenedor {
-    width: 1200px;
+    max-width: 1200px;
+    padding: 0;
+    margin: 0;
 }
+
 .servicios div.box {
-    width: 100%;
-    align-items: center;
-    margin-bottom: 2.5%; 
-    display: flex;
-    align-items: center;
-    justify-content: center;   
+    width: 49%;
+    margin-bottom: 2.5%;
+    display: inline-block;
 }
-.servicios div.box h1{
+
+.servicios div.box h1 {
     font-size: 20px;
-    padding-bottom: 5%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
 }
 
 .servicios div.box img {
-    width: 50%;
-    background: #eae7e0;
+    width: 90%;
+    margin-left: 5%;
     object-fit: cover;
     height: 40vh;
 }
 
 .servicios div.box .texto {
-    width: 40%;
-    margin-left: 7.5%;
+    width: 90%;
+    margin-left: 5%;
 }
-.servicios div.box .texto p{
+
+.servicios div.box .texto p {
     padding-bottom: 5%;
-    
 }
-.servicios div.box .texto a{
+
+.servicios div.box .texto a {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 2.5%;
     font-size: 15px;
-    color:white;
+    color: white;
     width: 50%;
     text-decoration: none;
     background: black;
+
 }
-.servicios div.box .texto a:hover{
-    background:#FA4738;
-    cursor:pointer;
+
+.servicios div.box .texto a:hover {
+    background: #FA4738;
+    cursor: pointer;
     letter-spacing: 1px;
     transition: 0.15s;
 }
 
-@media screen and (max-width: 600px){
-
+@media screen and (max-width: 600px) {
     .servicios div.box {
-        display: inline-block;
         width: 90%;
-        padding: 5%; 
+        padding: 5%;
     }
+
     .servicios div.box img {
         width: 100%;
+        margin: 0%;
     }
-    .servicios div.box .texto{
+
+    .servicios div.box .texto {
         width: 100%;
-        margin:0;
+        margin: 0;
         padding-top: 5%;
     }
 }
