@@ -5,3 +5,9 @@
 .main .contenedor {
     width: 1200px;
 }
+.main ul {
+    list-style:circle;
+}
+.main ul li{
+    margin-left: 50px;
+}
