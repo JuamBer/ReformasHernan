@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="../../css/header.css">
     <link rel="stylesheet" href="../../css/servicio.css">
     <link rel="stylesheet" href="../../css/footer.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript" src="../../js/iniciar_email.js"></script>
 </head>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-BX8MY38HGN"></script>
@@ -61,11 +63,31 @@
               </nav>
         </div>
     </header>
-    <div class="main">
         <div class="Titulo">
             <h1> REFORMAS DE COCINA </h1>
         </div>
-    </div>    
+<center>
+<div class="servicio">
+    <!-- CONTENIDO -->
+    <div class="contenido">
+        <img src="../../img/servicios/ReformasCocina/ReformasCocina1-Cuadrada.png" alt="Reformas Hernán">
+        <p>Reformamos tu cocina cambiando el mobiliario, suelo, pared y encimeras. Tu cocina se verá como nunca.</p>
+    </div>
+    <!-- FORMULARIO PRESUPUESTO -->
+    <div class="presupuesto">
+        <h1>¡ PIDE TU PRESUPUESTO GRATIS !</h1>
+        <div class="contenedor">
+            <input placeholder="Nombre" type="text" id="name" name="name"/>
+            <input placeholder="Email" type="text" id="email" name="email"/>
+            <input placeholder="Teléfono" type="text" id="tel" name="tel"/>
+            <input placeholder="Asunto" type="text" id="asunto" name="asunto"/>
+            <textarea placeholder="Danos detalles del proyecto. Dimensiones y materiales a utilizar." type="text" id="msg" name="msg"></textarea>
+            <br>
+            <button onclick="enviarCorreo()">ENVIAR</button>
+        </div>
+    </div>
+</div>  
+</center>    
     <footer>
         <center>
         <div class="footer">
@@ -96,5 +118,6 @@
     </div>            
     </footer>
     <script src="../../js/hamburguesa.js"></script>
+    <script src="../../js/email.js"></script>
 </body>
 </html>

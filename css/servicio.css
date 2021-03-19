@@ -73,28 +73,27 @@
 
 @media only screen and (max-width: 700px) {
 
-    /* PRESUPUESTO */
-    .presupuesto form {
-        width: 100%;
+    .servicio {
+        max-width: 1200px;
         display: inline;
     }
 
-    .presupuesto form div {
+    /* CONTENIDO */
+    .servicio .contenido {
+        width: 95%;
+        padding: 2.5%;
+    }
+
+    /* PRESUPUESTO */
+    .presupuesto {
+        background: #eae7e0;
         width: 100%;
+        color: black;
+        text-align: center;
+        padding-bottom: 5%;
+        padding-top: 5%;
+        margin-top: 7.5%;
+        margin-bottom: 0%;
     }
 
-    .presupuesto input,
-    textarea {
-        width: calc(100% - 30px);
-        margin-bottom: 15px;
-    }
-
-    .presupuesto textarea {
-        min-height: 325px;
-        margin-bottom: 15px;
-    }
-
-    .presupuesto button {
-        width: 100%;
-    }
 }
