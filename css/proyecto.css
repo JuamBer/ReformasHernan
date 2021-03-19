@@ -1,6 +1,17 @@
 * {
     box-sizing: border-box;
 }
+
+.datos span img {
+    width: 32.5px;
+    padding: 0;
+    margin: 0;
+    padding-right: 10px;
+}
+
+.datos .what img {
+    width: 32px;
+}
 .proyecto {
     max-width: 1200px;
     margin-bottom: 5%;
