@@ -1,5 +1,6 @@
 /* DATOS */
 .datos {
+    box-sizing: initial;
     background: white;
     padding-top: 7.5px;
     padding-bottom: 7.5px;
