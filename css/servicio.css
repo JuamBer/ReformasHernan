@@ -1,3 +1,100 @@
-.main {
-    margin-top: 1px;
+.servicio {
+    max-width: 1200px;
+    justify-content: space-around;
+    display: flex;
+}
+/* CONTENIDO */
+.servicio .contenido {
+    width: 60%;
+    padding-right: 5%;
+}
+.servicio .contenido img {
+    object-fit: cover;
+    width: 100%;
+    height: 450px;
+}
+.servicio .contenido p{
+    margin-top: 2.5%;
+    text-align: justify;
+    font-size: 20px;
+}
+/* PRESUPUESTO */
+.presupuesto {
+    background: #eae7e0;
+    width: 40%;
+    color: black;
+    text-align: center;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    margin-bottom: 5%;
+}
+
+.presupuesto h1 {
+    padding-bottom: 5%;
+    font-size: 30px;
+}
+
+.presupuesto input,textarea {
+    border: none;
+    width: 80%;
+    padding: 15px;
+    margin-bottom: 20px;
+    color: black;
+    transition: 0.2s;
+    text-align: left;
+    background: white;
+    outline: none;
+}
+
+.presupuesto textarea {
+    resize: none;
+    min-height: 100px;
+}
+
+.presupuesto button {
+    border: none;
+    display: inline-block;
+    width: 85%;
+    background: #000;
+    text-decoration: none;
+    transition: 0.2s;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    padding: 2%;
+}
+
+.presupuesto button:hover {
+    color: white;
+    background: #FA4738;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+
+    /* PRESUPUESTO */
+    .presupuesto form {
+        width: 100%;
+        display: inline;
+    }
+
+    .presupuesto form div {
+        width: 100%;
+    }
+
+    .presupuesto input,
+    textarea {
+        width: calc(100% - 30px);
+        margin-bottom: 15px;
+    }
+
+    .presupuesto textarea {
+        min-height: 325px;
+        margin-bottom: 15px;
+    }
+
+    .presupuesto button {
+        width: 100%;
+    }
 }

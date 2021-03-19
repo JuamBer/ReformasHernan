@@ -8,7 +8,8 @@ function enviarCorreo() {
   var tel = document.getElementById("tel");
   var asunto = document.getElementById("asunto");
   var msg = document.getElementById("msg");
-
+  var servicio = url;
+  
   if(url=="/pages/contacto.html"){
     templateID = 'template_xla9nsd';
   }else{
@@ -20,7 +21,8 @@ function enviarCorreo() {
     email: email.value,
     tel: tel.value,
     asunto: asunto.value,
-    msg: msg.value
+    msg: msg.value,
+    servicio: servicio
   })
   .then(() => {
     alert('¡El Mensaje Se Ha Enviado Correctamente!');

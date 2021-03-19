@@ -60,11 +60,32 @@
               </nav>
         </div>
     </header>
-    <div class="main">
-        <div class="Titulo">
-            <h1> REFORMAS PARCIALES E INTEGRALES DE VIVIENDAS Y LOCALES </h1>
+
+    <div class="Titulo">
+        <h1> REFORMAS PARCIALES E INTEGRALES DE VIVIENDAS Y LOCALES </h1>
+    </div>
+<center>
+<div class="servicio">
+    <!-- CONTENIDO -->
+    <div class="contenido">
+        <img src="../../img/servicios/Reformas/Reformas1-Cuadrada.png" alt="Reformas Hernán">
+        <p>Realizamos todas las fases de la reforma. Desde el cambio de distribución, instalaciones eléctricas, fontanería, carpintería, pintura, acabados y decoración final.</p>
+    </div>
+    <!-- FORMULARIO PRESUPUESTO -->
+    <div class="presupuesto">
+        <h1>¡ PIDE TU PRESUPUESTO GRATIS !</h1>
+        <div class="contenedor">
+            <input placeholder="Nombre" type="text" id="name" name="name"/>
+            <input placeholder="Email" type="text" id="email" name="email"/>
+            <input placeholder="Teléfono" type="text" id="tel" name="tel"/>
+            <input placeholder="Asunto" type="text" id="asunto" name="asunto"/>
+            <textarea placeholder="Danos detalles del proyecto. Dimensiones y materiales a utilizar." type="text" id="msg" name="msg"></textarea>
+            <br>
+            <button onclick="enviarCorreo()">ENVIAR</button>
         </div>
-    </div>    
+    </div>
+</div>  
+</center>   
     <footer>
         <center>
         <div class="footer">
@@ -95,5 +116,6 @@
     </div>            
     </footer>
     <script src="../../js/hamburguesa.js"></script>
+    <script src="../../js/email.js"></script>
 </body>
 </html>
