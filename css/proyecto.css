@@ -1,17 +1,4 @@
-* {
-    box-sizing: border-box;
-}
 
-.datos span img {
-    width: 32.5px;
-    padding: 0;
-    margin: 0;
-    padding-right: 10px;
-}
-
-.datos .what img {
-    width: 32px;
-}
 .proyecto {
     max-width: 1200px;
     margin-bottom: 5%;
@@ -22,13 +9,14 @@
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    width: calc(100% - 8px);
     padding: 0 4px;
 }
 
 .column {
-    -ms-flex: 50%;
+    -ms-flex: calc(50% - 8px);
     flex: 50%;
-    max-width:50%;
+    max-width:calc(50% - 8px);
     padding: 0 4px;
 }
 

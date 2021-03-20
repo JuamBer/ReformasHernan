@@ -157,13 +157,16 @@ a.boton:hover {
     cursor: pointer;
 }
 @media only screen and (max-width: 700px) {
+
    /* PRESUPUESTO */
-    .presupuesto form {
+    .presupuesto .contenedor {
         width: 100%;
         display: inline;
     }
-
-    .presupuesto form div {
+    .presupuesto  h1{
+        font-size: 30px;
+    }
+    .presupuesto .contenedor div {
         width: 100%;
     }
 
@@ -184,6 +187,7 @@ a.boton:hover {
     /* SERVICIOS */
     .servicios div.box {
         width: 95%;
+        background: none;
         padding: 2.5%;
         align-items: center;
         margin-bottom: 5%;
